@@ -12,6 +12,11 @@
 
 - (void) rememberThisArrayForLater:(NSMutableArray *)arrayToRemember {
     /* WORK HERE */
+    StuffRememberer *stuffRemembererInstance = [StuffRememberer new];
+    stuffRemembererInstance = (StuffRememberer *)arrayToRemember;
+    if ([self isMemberOfClass:[StuffRememberer class]]) {
+        NSLog(@"self is member of StuffRemeberer");
+    }
 }
 
 - (void) copyThisArrayForLater:(NSMutableArray *)arrayToCopy {
