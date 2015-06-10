@@ -72,4 +72,7 @@
  */
 - (CGFloat) floatYouShouldRemember;
 
+@property NSMutableArray *rememberedArray;
+@property CGFloat rememberedFloat;
+
 @end
